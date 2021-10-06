@@ -1,17 +1,43 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
+    <ion-searchbar placeholder="Search experience"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <section>
+    <!-- hero section -->
+    <h1 class="ion-text-center">Not sure what to do?</h1>
+    <ion-button color="medium" expand="block">Find experience</ion-button>
+    <ion-button color="medium" expand="block">Meet buddy</ion-button>
+    <ion-button color="medium" expand="block">Buy itinerary</ion-button>
+  </section>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <section>
+    <!-- location section -->
+    <h2>Nearby Locations</h2>
+    <swiper [slidesPerView]="2">
+      <ng-template swiperSlide *ngFor="let location of mockData.nearbyLocations">
+        <div>{{ location.name }}</div>
+        <div>{{ location.image }}</div>
+        <div>{{ location.experiencesAvailable }}</div>
+      </ng-template>
+    </swiper>
+
+  </section>
+
+  <section>
+    <!-- experiences section -->
+    <h2>Experiences</h2>
+    <swiper [slidesPerView]="2">
+      <ng-template swiperSlide *ngFor="let experience of mockData.suggestedExperiences">
+        <div>{{ experience.name }}</div>
+        <div>{{ experience.image }}</div>
+        <div>{{ experience.price }} / Person</div>
+        <div>{{ experience.rating }}</div>
+      </ng-template>
+    </swiper>
+
+  </section>
+
 </ion-content>
