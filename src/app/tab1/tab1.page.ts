@@ -59,6 +59,20 @@ export class Tab1Page {
         "price": 22,
         "rating": 4.5,
       },
+      {
+        "name": "Live music",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
+        "description": "lorem impsum dolor et nominum papis supremo et aqua",
+        "price": 5,
+        "rating": 3.5,
+      },
+      {
+        "name": "Food tour",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
+        "description": "lorem impsum dolor et nominum papis supremo et aqua",
+        "price": 40,
+        "rating": 5,
+      },
     ]
   }
 
