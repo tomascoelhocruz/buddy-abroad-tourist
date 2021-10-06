@@ -20,14 +20,21 @@
 
   <section>
     <!-- location section -->
+    <!-- change to new design -->
     <h2>Nearby Locations</h2>
-    <swiper [slidesPerView]="2">
+    <swiper [slidesPerView]="1.3">
       <ng-template swiperSlide *ngFor="let location of mockData.nearbyLocations">
-        <ion-card class="locationCard">
-          <ion-card-header>
-            <ion-card-title>{{ location.name }}</ion-card-title>
-            <ion-card-subtitle>{{ location.experiencesAvailable }} experiences</ion-card-subtitle>
-          </ion-card-header>
+        <ion-card style="box-shadow: none;">
+          <img class="locationCardImage" src="{{ location.image }}">
+          <div class="nameOverlay">
+            <p style="color: black;">
+              <ion-card-title class="locationCardText">{{ location.name }}</ion-card-title>
+            </p>
+          </div>
+          <div class="expOverlay">
+            <p style="color: black;"><span style="color: #feaa00;font-weight: bold;">{{
+                location.experiencesAvailable }}</span> experiences</p>
+          </div>
         </ion-card>
 
       </ng-template>
@@ -38,12 +45,15 @@
   <section>
     <!-- experiences section -->
     <h2>Experiences</h2>
-    <swiper [slidesPerView]="2">
+    <swiper [slidesPerView]="1.3">
       <ng-template swiperSlide *ngFor="let experience of mockData.suggestedExperiences">
-        <div>{{ experience.name }}</div>
-        <div>{{ experience.image }}</div>
-        <div>{{ experience.price }} / Person</div>
-        <div>{{ experience.rating }}</div>
+        <ion-card style="box-shadow: none;">
+          <img class="locationCardImage" src="{{ experience.image }}">
+          <ion-card-header>
+            <ion-card-title class="locationCardText">{{ experience.name }}</ion-card-title>
+            <ion-card-subtitle class="locationCardText">{{experience.description }}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
       </ng-template>
     </swiper>
 

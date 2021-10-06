@@ -1,3 +1,7 @@
+ion-searchbar {
+    --border-radius: 15px;
+}
+
 ion-content {
     --padding-top: 0;
 }
@@ -28,9 +32,44 @@ ion-button {
     margin-bottom: 15px;
 }
 
-.locationCard {
+.locationCardImage {
     background-image: url("media/ruas-mais-bonitas-de-lisboa-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #ffffff; // bg fail safe
+    border-radius: 10px;
+}
+
+.locationCardText {
+    color: black;
+}
+
+.expOverlay{
+    text-align: center;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: auto;
+    position: absolute;
+    z-index: 99;
+    top: 70%;
+    right: 2%;
+    opacity: 1;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.nameOverlay{
+    text-align: center;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: auto;
+    position: absolute;
+    z-index: 99;
+    top: 2%;
+    left: 2%;
+    opacity: 1;
+    background: #ffffff;
+    border-radius: 10px;
 }
