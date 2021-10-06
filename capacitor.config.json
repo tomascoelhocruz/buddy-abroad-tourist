@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Buddy Abroad Tourist",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
