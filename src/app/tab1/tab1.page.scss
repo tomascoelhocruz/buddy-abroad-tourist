@@ -1,0 +1,36 @@
+ion-content {
+    --padding-top: 0;
+}
+
+section {
+    padding: 0px 15px;
+}
+
+.hero {
+    background-image: url("media/Animated_Shape.svg"); // 600w 700h
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2f4858; // animated bg fail safe
+    height: 70%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    top: 0;
+}
+
+.actionBttnWrapper {
+    margin: auto;
+    width: 85%;
+    margin-top: 30%;
+}
+
+ion-button {
+    --background: white;
+    margin-bottom: 15px;
+}
+
+.locationCard {
+    background-image: url("media/ruas-mais-bonitas-de-lisboa-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff; // bg fail safe
+}
