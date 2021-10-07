@@ -31,11 +31,11 @@
 @import "~swiper/scss/pagination";
 
 @font-face {
-    font-family: "Lato"; //This is what we are going to call
-    src: url("./assets/fonts/Lato-Regular.ttf");
+    font-family: "Poppins"; //This is what we are going to call
+    src: url("./assets/fonts/Poppins-Regular.ttf");
 }
 
 ion-content,
 ion-header {
-    font-family: "Lato" !important;
+    font-family: "Poppins" !important;
 }

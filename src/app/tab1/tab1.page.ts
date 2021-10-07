@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab1Page implements OnInit {
 
+  // ---------- MOCK DATA ----------
   mockData: any = {
     "nearbyLocations": [
       {
@@ -75,18 +76,45 @@ export class Tab1Page implements OnInit {
       },
     ]
   }
+  // ++++++++++++ MOCK DATA ++++++++++++
+
+  menuGrid = [
+    {
+      "name": "Find Tour",
+      "image": "assets/iconcamera.svg",
+      "link": "placeholder",
+    },
+    {
+      "name": "Create Tour",
+      "image": "assets/iconbulb.svg",
+      "link": "placeholder",
+    },
+    {
+      "name": "Meet Buddy",
+      "image": "assets/iconfriends.svg",
+      "link": "placeholder",
+    },
+    {
+      "name": "Get Tour Book",
+      "image": "assets/icontaylor.svg",
+      "link": "placeholder",
+    },
+  ]
+
+  experiencesGrid: any
 
   // helper function to change simple array to x dimensional array
   arrayToMatrix = (array, columns) => Array(Math.ceil(array.length / columns)).fill('').reduce((acc, cur, index) => {
     return [...acc, [...array].splice(index * columns, columns)]
   }, [])
 
-  experiencesGrid: any
+
 
   constructor() { }
 
   ngOnInit() {
     this.experiencesGrid = this.arrayToMatrix(this.mockData.suggestedExperiences, 2)
+    this.menuGrid = this.arrayToMatrix(this.menuGrid, 2)
   }
 
 }
