@@ -11,11 +11,13 @@ section {
 }
 
 .hero {
-    background-image: url("media/Animated_Shape.svg"); // 600w 700h
+    background-image: url("media/bg.jpeg"); // 600w 700h
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
     background-color: #2f4858; // animated bg fail safe
-    height: 70%;
+    height: 45%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     top: 0;
@@ -30,6 +32,10 @@ section {
 ion-button {
     --background: white;
     margin-bottom: 15px;
+}
+
+.sectionHeader {
+    font-weight: 600;
 }
 
 .locationCard {
