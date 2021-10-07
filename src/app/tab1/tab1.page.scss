@@ -32,19 +32,22 @@ ion-button {
     margin-bottom: 15px;
 }
 
-.locationCardImage {
-    background-image: url("media/ruas-mais-bonitas-de-lisboa-1.jpg");
+.locationCard {
+    box-shadow: none;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #ffffff; // bg fail safe
-    border-radius: 10px;
+    background-position: center;
+    background-color: rgb(0, 0, 0); // bg fail safe
+    border-radius: 5px;
 }
 
 .locationCardText {
-    color: black;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.expOverlay{
+.expOverlay {
     text-align: center;
     width: auto;
     padding-right: 10px;
@@ -59,7 +62,7 @@ ion-button {
     border-radius: 10px;
 }
 
-.nameOverlay{
+.nameOverlay {
     text-align: center;
     width: auto;
     padding-right: 10px;
@@ -72,4 +75,16 @@ ion-button {
     opacity: 1;
     background: #ffffff;
     border-radius: 10px;
+}
+
+.experienceCardImage {
+    background-image: url("media/ruas-mais-bonitas-de-lisboa-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff; // bg fail safe
+    border-radius: 10px;
+}
+
+.experienceCardText {
+    color: black;
 }

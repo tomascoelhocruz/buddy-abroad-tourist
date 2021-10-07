@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {
+export class Tab1Page implements OnInit {
 
   mockData: any = {
     "nearbyLocations": [
@@ -76,7 +76,17 @@ export class Tab1Page {
     ]
   }
 
+  // helper function to change simple array to x dimensional array
+  arrayToMatrix = (array, columns) => Array(Math.ceil(array.length / columns)).fill('').reduce((acc, cur, index) => {
+    return [...acc, [...array].splice(index * columns, columns)]
+  }, [])
+
+  experiencesGrid: any
+
   constructor() { }
 
+  ngOnInit() {
+    this.experiencesGrid = this.arrayToMatrix(this.mockData.suggestedExperiences, 2)
+  }
 
 }
