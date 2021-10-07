@@ -1,3 +1,8 @@
+ion-header,
+ion-content {
+    --ion-background-color: #ffb449 !important;
+}
+
 ion-searchbar {
     --border-radius: 15px;
 }
@@ -7,13 +12,7 @@ section {
 }
 
 .banner {
-    background-color: #FFB449;
     width: 100%;
-    border: none;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
 }
 
 .bannerText {
@@ -27,7 +26,7 @@ section {
 
 .heroCard {
     padding: 5px;
-
+    background-color: white;
     margin: auto;
     border: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -40,11 +39,15 @@ section {
 
 .heroCardText {
     text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgb(70, 70, 70);
 }
 
 .sectionHeader {
     font-weight: 600;
-    color: white;
+    color: #ffb449;
+  
 }
 
 .locationCard {
