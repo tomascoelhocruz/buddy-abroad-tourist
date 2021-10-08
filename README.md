@@ -8,7 +8,13 @@ run with - ionic serve
 TODO
 ~ tab 1 home
     - refactor inline CSS
-    - better banner image maybe shadow  
+    - better banner image maybe shadow
+
+~ tab 2 bookings
+    - change font styles
+     
+
+
 
 |||--- color palette ---|||
 
