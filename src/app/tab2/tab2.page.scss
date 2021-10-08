@@ -1,0 +1,51 @@
+  ion-card{
+    height: auto;
+    border-radius: 8px;
+    margin: 5px 5px 15px;
+    position: relative;
+    text-align: left;
+  }
+  
+  ion-img{
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  ion-label{
+    color: #3D3D3D;
+  }
+  
+  ion-icon{
+    color: #FEAA00;
+    opacity: 0.8;
+  }
+  
+  ion-chip{
+    width: 30%;
+    right: 5px;
+  }
+  
+  .price-tag{
+    color: #474440;
+    line-height: 0px;
+  }
+  
+  .myOverlay{
+    text-align: center;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: auto;
+    position: absolute;
+    z-index: 99;
+    top: 110px;
+    right: 10px;
+    opacity: 1;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .labelHeader{
+    color: #3D3D3D;
+    text-transform: none;
+  }
