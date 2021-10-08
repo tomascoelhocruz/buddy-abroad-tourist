@@ -15,7 +15,10 @@ TODO
 
 ~ tab 3 inbox
     - complete notification screen
-     
+
+~ tab 4 profile
+    - refactor inline CSS
+    - new fields
 
 
 
