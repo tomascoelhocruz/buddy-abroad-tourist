@@ -9,7 +9,7 @@
   <div>
     <!-- banner section -->
     <div class="banner">
-      <img src="assets/bannerwhite.png">
+      <img class="bannerImage" src="assets/bannerwhite.png">
     </div>
 
   </div>
@@ -28,15 +28,15 @@
     </ion-grid>
   </section>
 
-  <div style="background-color: white;width: 100%;padding-top: 0.5px;padding-bottom: 15px">
+  <div style="background-color: white;width: 100%;padding-top: 0.5px;padding-bottom: 15px;box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 6px, rgba(0, 0, 0, 0.06) 0px 3px 6px;
+  ">
     <section>
       <!-- location section -->
       <h5 class="sectionHeader">NEAR YOU <span style="float:right;margin-right: 2%">
-          <ion-icon name="ellipsis-horizontal"></ion-icon>
           <ion-icon name="chevron-forward-outline"></ion-icon>
         </span></h5>
       <div style="background-color: white;border-radius: 5px;">
-        <swiper [slidesPerView]="1">
+        <swiper [slidesPerView]="1.2">
           <ng-template swiperSlide *ngFor="let location of mockData.nearbyLocations">
             <ion-card class="locationCard" [ngStyle]="{'background-image': 'url(' + location.image + ')'}">
               <ion-card-title class="locationCardText">{{ location.name }}</ion-card-title>
@@ -51,7 +51,8 @@
   </div>
 
   <br>
-  <div style="background-color: white;width: 100%;padding-top: 0.5px;padding-bottom: 15px">
+  <div style="background-color: white;width: 100%;padding-top: 0.5px;padding-bottom: 15px;box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
+  ">
 
     <section>
       <!-- experiences section -->
@@ -62,7 +63,13 @@
         <ion-row *ngFor="let experienceRow of experiencesGrid" class="ion-justify-content-between">
           <ion-col *ngFor="let experienceCol of experienceRow">
             <ion-card style="box-shadow: none;    margin: auto; margin-bottom: 15px;background-color: white;">
-              <img class="experienceCardImage" src="{{ experienceCol.image }}">
+              <div class="container">
+                <img class="experienceCardImage" src="{{ experienceCol.image }}">
+                <div class="bottom-right">
+                  <ion-icon style="color: #feaa00;" name="star"></ion-icon>
+                  <ion-label class="labelText">{{experienceCol.rating}}</ion-label>
+                </div>
+              </div>
               <ion-card-title class="experienceCardText">{{ experienceCol.name }}</ion-card-title>
               <ion-card-subtitle class="experienceCardText">{{experienceCol.description }}</ion-card-subtitle>
             </ion-card>

@@ -4,8 +4,22 @@
 
 run with - ionic serve
 
-- color palette -
 
+TODO
+~ tab 1 home
+    - refactor inline CSS
+    - better banner image maybe shadow  
+
+|||--- color palette ---|||
+
+LIGHT
+FFB449
+FDDD5C
+FDFD97
+AFC8CF
+789FCC
+
+HARRD - 
 #FEAA00 yellow
 #99AB1A light green
 #3C9C50 emerald green
