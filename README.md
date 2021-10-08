@@ -12,6 +12,9 @@ TODO
 
 ~ tab 2 bookings
     - change font styles
+
+~ tab 3 inbox
+    - complete notification screen
      
 
 

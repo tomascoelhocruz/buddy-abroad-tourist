@@ -1,17 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <section>
+    <ion-segment color="dark" [(ngModel)]="type" scrollable>
+      <ion-segment-button value="conversations" checked>
+        <ion-label class="labelHeader">conversations</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="notifications" checked>
+        <ion-label class="labelHeader">notifications</ion-label>
+      </ion-segment-button>
+    </ion-segment>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <div [ngSwitch]="type">
+
+      <ion-list *ngSwitchCase="'conversations'">
+        <ion-list-header>
+          Recent messages
+        </ion-list-header>
+        <ion-item *ngFor="let contact of mockData.messages" routerLink="placeholder">
+          <ion-avatar slot="start">
+            <img src="{{ contact.image }}">
+          </ion-avatar>
+          <ion-label>
+            <h2 class="name">{{ contact.name }}</h2>
+            <p>{{ contact.description }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'notifications'">
+        <ion-item *ngFor="let notification of mockData.notifications" routerLink="placeholder">
+
+          <ion-label>
+            {{ notification.message }}
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+
+
+    </div>
+  </section>
+
+
 </ion-content>
