@@ -12,6 +12,10 @@ const routes: Routes = [
   {
     path: 'search-buddy',
     loadChildren: () => import('./search-buddy/search-buddy.module').then( m => m.SearchBuddyPageModule)
+  },
+  {
+    path: 'search-book',
+    loadChildren: () => import('./search-book/search-book.module').then( m => m.SearchBookPageModule)
   }
 
 ];

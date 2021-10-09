@@ -1,0 +1,48 @@
+ion-searchbar {
+    --border-radius: 15px;
+}
+
+section {
+    padding: 0px 10px;
+}
+
+.sectionHeader {
+    font-weight: 600;
+    color: #ffb449;
+}
+
+.experienceCardImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffffff; // bg fail safe
+    border-radius: 5px;
+}
+
+.experienceCardText {
+    color: black;
+    word-break: break-all;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    color: black;
+    font-size: medium;
+    background-color: #ffffff;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-radius: 5px;
+}
+
+.labelText {
+    margin-left: 5px;
+    font-size: large;
+}
