@@ -2,14 +2,15 @@
   <ion-toolbar>
     <ion-grid>
       <ion-row>
-        <ion-col size="auto">
-          <ion-button style="--border-color	: transparent;--background: transparent;--box-shadow	: none;margin-top: 9px;" 
-          (click)="goback()" >
-            <ion-icon  slot="icon-only" name="arrow-back-circle-outline"></ion-icon>
-          </ion-button>
+
+        <ion-col>
+          <ion-searchbar style="--background	: white;" placeholder="Search"></ion-searchbar>
         </ion-col>
         <ion-col size="auto">
-          <ion-searchbar style="--background	: white;" placeholder="Search"></ion-searchbar>
+          <ion-button
+            style="--border-color	: transparent;--background: transparent;--box-shadow	: none;margin-top: 9px;--color: red;text-transform: none;font-weight: bold;"
+            (click)="goback()">
+            CLOSE </ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -20,7 +21,24 @@
 
 
   <section>
-
+    <!-- experiences section -->
+    <ion-grid>
+      <ion-row *ngFor="let experienceRow of experiences" class="ion-justify-content-between">
+        <ion-col *ngFor="let experienceCol of experienceRow">
+          <ion-card style="box-shadow: none;    margin: auto; margin-bottom: 15px;background-color: white;">
+            <div class="container">
+              <img class="experienceCardImage" src="{{ experienceCol.image }}">
+              <div class="bottom-right">
+                <ion-icon style="color: #feaa00;" name="star"></ion-icon>
+                <ion-label class="labelText">{{experienceCol.rating}}</ion-label>
+              </div>
+            </div>
+            <ion-card-title class="experienceCardText">{{ experienceCol.name }}</ion-card-title>
+            <ion-card-subtitle class="experienceCardText">{{experienceCol.description }}</ion-card-subtitle>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </section>
 
 

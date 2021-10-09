@@ -2,14 +2,15 @@
   <ion-toolbar>
     <ion-grid>
       <ion-row>
-        <ion-col size="auto">
-          <ion-button style="--border-color	: transparent;--background: transparent;--box-shadow	: none;margin-top: 9px;" 
-          (click)="goback()" >
-            <ion-icon  slot="icon-only" name="arrow-back-circle-outline"></ion-icon>
-          </ion-button>
+
+        <ion-col>
+          <ion-searchbar style="--background	: white;" placeholder="Search"></ion-searchbar>
         </ion-col>
         <ion-col size="auto">
-          <ion-searchbar style="--background	: white;" placeholder="Search"></ion-searchbar>
+          <ion-button
+            style="--border-color	: transparent;--background: transparent;--box-shadow	: none;margin-top: 9px;--color: red;text-transform: none;font-weight: bold;"
+            (click)="goback()">
+            CLOSE </ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -20,7 +21,26 @@
 
 
   <section>
-
+    <ion-list>
+      <ion-card *ngFor="let buddy of mockData.buddies" routerLink="placeholder">
+        <ion-item  lines=" none">
+        <ion-avatar  slot="start">
+          <img src="{{ buddy.image }}">
+        </ion-avatar>
+        <ion-label>
+          <h2 class="name">{{ buddy.name }}</h2>
+          <p>{{ buddy.description }}</p>
+          <p>
+            <span *ngFor="let interest of buddy.interests">
+              <ion-chip outline color="warning">
+                <ion-label>{{ interest }}</ion-label>
+              </ion-chip>
+            </span>
+          </p>
+        </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-list>
   </section>
 
 
