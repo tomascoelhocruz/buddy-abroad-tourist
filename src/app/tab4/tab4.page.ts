@@ -12,10 +12,11 @@ export class Tab4Page implements OnInit {
     {
       "name": "Alex Jones",
       "image": "assets/avatar-finn.png",
-      "languages": "hey there",
+      "languages": "portuguese",
       "home": "Lisbon",
       "rating": 5,
       "description": "lorem ipsum dolor et nominem lis",
+      "tourCount": 145,
     },
   }
 

@@ -5,29 +5,25 @@
 run with - ionic serve
 
 
-TODO
-~ tab 1 home
-    - refactor inline CSS
-    - better banner image maybe shadow
+# TODO
+> tab 1 home
+>    - refactor inline CSS
+>    - better banner image maybe shadow
 
-~ tab 2 bookings
-    - change font styles
+> tab 2 bookings
+>    - change font styles
 
-~ tab 3 inbox
-    - complete notification screen
-    - pass notification section to drawer or side menu
+> tab 4 profile
+>   - refactor inline CSS
+>   - new fields
 
-~ tab 4 profile
-    - refactor inline CSS
-    - new fields
-
-~ yet to implement
-++ tour detail
-++ profile edit
-++ chat room
-++ tour order
-++ confirmation / pay
-++ crud booking cancel / change
+# yet to implement
+>tour detail
+>profile edit
+>chat room
+>tour order
+>confirmation / pay
+>crud booking cancel / change
 
 
 |||--- color palette ---|||
