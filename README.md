@@ -8,10 +8,13 @@ run with - ionic serve
 # TODO
 > tab 1 home
 >    - refactor inline CSS
->    - better banner image maybe shadow
 
 > tab 2 bookings
 >    - change font styles
+>    - refactor inline CSS
+
+> tab 3 inbox
+>    - refactor inline CSS
 
 > tab 4 profile
 >   - refactor inline CSS
@@ -24,6 +27,9 @@ run with - ionic serve
 >tour order
 >confirmation / pay
 >crud booking cancel / change
+
+# ideias
+> - tab 1 better banner image maybe shadow
 
 
 |||--- color palette ---|||
