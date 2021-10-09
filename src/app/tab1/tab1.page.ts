@@ -82,17 +82,17 @@ export class Tab1Page implements OnInit {
     {
       "name": "Find Tour",
       "image": "assets/iconcamera.svg",
-      "link": "placeholder",
+      "link": "search-tours",
     },
     {
-      "name": "Create Tour",
+      "name": "Tailor Tour",
       "image": "assets/iconbulb.svg",
       "link": "placeholder",
     },
     {
       "name": "Meet Buddy",
       "image": "assets/iconfriends.svg",
-      "link": "placeholder",
+      "link": "search-buddy",
     },
     {
       "name": "Get Tour Book",

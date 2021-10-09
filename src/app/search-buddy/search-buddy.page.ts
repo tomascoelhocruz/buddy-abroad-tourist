@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-search-tours',
-  templateUrl: './search-tours.page.html',
-  styleUrls: ['./search-tours.page.scss'],
+  selector: 'app-search-buddy',
+  templateUrl: './search-buddy.page.html',
+  styleUrls: ['./search-buddy.page.scss'],
 })
-export class SearchToursPage implements OnInit {
-
+export class SearchBuddyPage implements OnInit {
+  
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
@@ -16,5 +16,6 @@ export class SearchToursPage implements OnInit {
   goback() {
     this.navCtrl.pop();
   }
+
 
 }

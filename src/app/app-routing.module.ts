@@ -8,6 +8,10 @@ const routes: Routes = [
   },  {
     path: 'search-tours',
     loadChildren: () => import('./search-tours/search-tours.module').then( m => m.SearchToursPageModule)
+  },
+  {
+    path: 'search-buddy',
+    loadChildren: () => import('./search-buddy/search-buddy.module').then( m => m.SearchBuddyPageModule)
   }
 
 ];

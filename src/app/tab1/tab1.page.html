@@ -19,7 +19,7 @@
     <ion-grid>
       <ion-row *ngFor="let menuRow of menuGrid">
         <ion-col *ngFor="let menuCol of menuRow">
-          <ion-card class="heroCard">
+          <ion-card class="heroCard" routerLink="/{{ menuCol.link }}">
             <img class="heroCardImage" src="{{ menuCol.image }}">
             <ion-card-title class="heroCardText">{{ menuCol.name }}</ion-card-title>
           </ion-card>
