@@ -44,14 +44,17 @@ export class Tab3Page implements OnInit {
       {
         "message": "Message recieved",
         "redirect": "placeholder",
+        "time" : 3,
       },
       {
         "message": "Tour approved",
         "redirect": "placeholder",
+        "time" : 5,
       },
       {
         "message": "Tour approved",
         "redirect": "placeholder",
+        "time" : 14,
       },
     ],
   }
