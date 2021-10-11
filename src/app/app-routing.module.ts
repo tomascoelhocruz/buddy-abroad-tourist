@@ -29,6 +29,14 @@ const routes: Routes = [
   {
     path: 'buddy-profile',
     loadChildren: () => import('./buddy-profile/buddy-profile.module').then( m => m.BuddyProfilePageModule)
+  },
+  {
+    path: 'match',
+    loadChildren: () => import('./match/match.module').then( m => m.MatchPageModule)
+  },
+  {
+    path: 'custom-tour',
+    loadChildren: () => import('./custom-tour/custom-tour.module').then( m => m.CustomTourPageModule)
   }
 
 ];
