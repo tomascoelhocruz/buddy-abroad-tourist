@@ -63,8 +63,12 @@
     z-index: -1;
     position: absolute;
   }
+
+  section {
+    padding: 0px 10px;
+}
   
-  ion-item {
+  .showcase {
     display: inline-flex;
     width: 33.3%;
   }

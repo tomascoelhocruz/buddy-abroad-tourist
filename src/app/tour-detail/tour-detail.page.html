@@ -1,15 +1,16 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar style="color:#F0F0F0;">
-    <ion-buttons slot="start">
-      <ion-button (click)="goback()">
+<ion-content>
+
+  <div class="container">
+    <ion-img style="width: 100%" src="{{mockData.tour.image}}"></ion-img>
+    <div class="buttonRow">
+      <ion-button style="--background: transparent; --box-shadow: none" (click)="goback()">
         <ion-icon name="close-circle" class="close"></ion-icon>
       </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+    </div>
+  </div>
 
-<ion-content>
-  <ion-img style="width: 100%" src="{{mockData.tour.image}}"></ion-img>
+  <!--
+  <ion-img style="width: 100%" src="{{mockData.tour.image}}"></ion-img>-->
 
   <ion-list>
     <ion-list-header>
@@ -17,9 +18,6 @@
     </ion-list-header>
     <ion-item lines="none">
       <p> {{mockData.tour.description}} </p>
-    </ion-item>
-    <ion-item lines="none">
-      <ion-icon name="map-outline"></ion-icon> {{mockData.tour.location}}
     </ion-item>
   </ion-list>
 
@@ -39,6 +37,13 @@
     <ion-item lines="none">
       <ion-icon name="bag-check-outline"></ion-icon> Includes {{mockData.tour.details}}
     </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="map-outline"></ion-icon>Hosted in {{mockData.tour.location}}
+    </ion-item>
+    <ion-item lines="none">
+      <img class="gmapPlaceholder" src="assets/gmapplaceholder.png">
+    </ion-item>
+
   </ion-list>
 
   <ion-list>

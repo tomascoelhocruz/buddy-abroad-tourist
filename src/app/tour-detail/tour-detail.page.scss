@@ -1,6 +1,5 @@
 .close {
     color: #2b2b2b;
-    opacity: 0.9;
     width: 35px;
     height: 35px;
 }
@@ -19,6 +18,21 @@
     z-index: -1;
 }
 
-ion-icon{
+ion-icon {
     margin-right: 10px;
+}
+
+.gmapPlaceholder {
+    border-radius: 10px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.buttonRow {
+    position: absolute;
+    top: 8px;
+    left: 8px;
 }

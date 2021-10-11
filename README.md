@@ -55,5 +55,5 @@ HARRD -
 #2F4858 dark blue
 
 
-> tomorrow guide detail/ book detail / match cards
+> tomorrow book detail / match cards / booking detail
 

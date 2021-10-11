@@ -51,13 +51,11 @@
         <ion-icon name="language-outline"></ion-icon> Speaks {{mockData.buddy.languages}}
       </ion-item>
       <ion-item lines="none">
-        <p>
-          <span *ngFor="let interest of mockData.buddy.interests">
-            <ion-chip outline color="warning">
-              <ion-label>{{ interest }}</ion-label>
-            </ion-chip>
-          </span>
-        </p>
+        <span *ngFor="let interest of mockData.buddy.interests">
+          <ion-chip outline color="warning">
+            <ion-label>{{ interest }}</ion-label>
+          </ion-chip>
+        </span>
       </ion-item>
 
     </ion-list>
