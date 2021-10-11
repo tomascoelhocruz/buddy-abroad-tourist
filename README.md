@@ -24,7 +24,6 @@ run with - ionic serve
 >   - gmap api map on location
 >   - languange available prepare for array
 >   - better UI
->   - close icon overlay image
 
 # TODO YET TO BE IMPLEMENTED
 >profile edit
