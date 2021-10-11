@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'searchbylocation/:location',
     loadChildren: () => import('./searchbylocation/searchbylocation.module').then( m => m.SearchbylocationPageModule)
+  },
+  {
+    path: 'tour-detail',
+    loadChildren: () => import('./tour-detail/tour-detail.module').then( m => m.TourDetailPageModule)
   }
 
 ];

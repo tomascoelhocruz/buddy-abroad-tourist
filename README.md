@@ -5,7 +5,7 @@
 run with - ionic serve
 
 
-# TODO
+# TODO ON IMPLEMENTED
 > tab 1 home
 >    - refactor inline CSS
 
@@ -20,15 +20,20 @@ run with - ionic serve
 >   - refactor inline CSS
 >   - new fields
 
-# yet to implement
->tour detail
+> tour detail
+>   - gmap api map on location
+>   - languange available prepare for array
+>   - better UI
+>   - close icon overlay image
+
+# TODO YET TO BE IMPLEMENTED
 >profile edit
 >chat room
 >tour order
 >confirmation / pay
 >crud booking cancel / change
 
-# ideias
+# IDEIAS
 > - tab 1 better banner image maybe shadow
 
 
@@ -50,5 +55,5 @@ HARRD -
 #2F4858 dark blue
 
 
-> tomorrow tour detail/ guide detail/ book detail / match cards
+> tomorrow guide detail/ book detail / match cards
 

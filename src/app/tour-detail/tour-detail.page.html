@@ -1,0 +1,82 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar style="color:#F0F0F0;">
+    <ion-buttons slot="start">
+      <ion-button (click)="goback()">
+        <ion-icon name="close-circle" class="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img style="width: 100%" src="{{mockData.tour.image}}"></ion-img>
+
+  <ion-list>
+    <ion-list-header>
+      <h1>{{ mockData.tour.name }}</h1>
+    </ion-list-header>
+    <ion-item lines="none">
+      <p> {{mockData.tour.description}} </p>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="map-outline"></ion-icon> {{mockData.tour.location}}
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>About this visit:</ion-label>
+    </ion-list-header>
+    <ion-item lines="none">
+      <ion-icon name="time-outline"></ion-icon> {{mockData.tour.duration}} hours
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="people-outline"></ion-icon> Up to {{mockData.tour.size}} people
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="language-outline"></ion-icon> Available in {{mockData.buddy.language}}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="bag-check-outline"></ion-icon> Includes {{mockData.tour.details}}
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Your Buddy</ion-label>
+    </ion-list-header>
+    <ion-item lines="none">
+      <ion-avatar style="width: 50px;height: 50px" slot="start">
+        <img src="{{ mockData.buddy.image }}">
+      </ion-avatar>
+      <ion-label style="padding: 2%">
+        <h3 style="">{{ mockData.buddy.name }}<span style=""> {{ mockData.buddy.rating}} </span>
+          <ion-icon style="color: #FEAA00" name="star"></ion-icon>
+        </h3>
+        <p style="">{{ mockData.buddy.description}}</p>
+      </ion-label>
+      <ion-button fill="outline" color="warning" style="text-transform: none;border-radius: 10px;"
+        routerLink="placeholder">
+        <span style="">Send Message</span>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="footerBar">
+    <ion-title class="footerText" style="">From
+      <span style="margin-right: 2%;margin-left: 2%;">{{mockData.tour.price}}
+        €</span>
+      / person
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button style="background-color: #FEAA00;border-radius: 24px;width: 165px;height: 40px;"
+        routerLink="placeholder">
+        <span style="color: #ffffff;text-transform:none;">Book Now</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

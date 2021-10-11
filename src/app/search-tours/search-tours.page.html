@@ -25,7 +25,9 @@
     <ion-grid>
       <ion-row *ngFor="let experienceRow of experiences" class="ion-justify-content-between">
         <ion-col *ngFor="let experienceCol of experienceRow">
-          <ion-card style="box-shadow: none;    margin: auto; margin-bottom: 15px;background-color: white;">
+          <ion-card style="box-shadow: none;    margin: auto; margin-bottom: 15px;background-color: white;"
+          routerLink="/tour-detail">
+          >
             <div class="container">
               <img class="experienceCardImage" src="{{ experienceCol.image }}">
               <div class="bottom-right">
