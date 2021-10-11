@@ -23,21 +23,21 @@
   <section>
     <ion-list>
       <ion-card *ngFor="let buddy of mockData.buddies" routerLink="placeholder">
-        <ion-item  lines=" none">
-        <ion-avatar  slot="start">
-          <img src="{{ buddy.image }}">
-        </ion-avatar>
-        <ion-label>
-          <h2 class="name">{{ buddy.name }}</h2>
-          <p>{{ buddy.description }}</p>
-          <p>
-            <span *ngFor="let interest of buddy.interests">
-              <ion-chip outline color="warning">
-                <ion-label>{{ interest }}</ion-label>
-              </ion-chip>
-            </span>
-          </p>
-        </ion-label>
+        <ion-item lines=" none">
+          <ion-avatar slot="start">
+            <img src="{{ buddy.image }}">
+          </ion-avatar>
+          <ion-label>
+            <h2 class="name">{{ buddy.name }}</h2>
+            <p>{{ buddy.description }}</p>
+            <p>
+              <span *ngFor="let interest of buddy.interests">
+                <ion-chip outline color="warning">
+                  <ion-label>{{ interest }}</ion-label>
+                </ion-chip>
+              </span>
+            </p>
+          </ion-label>
         </ion-item>
       </ion-card>
     </ion-list>

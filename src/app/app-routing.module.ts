@@ -5,7 +5,8 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },  {
+  },
+  {
     path: 'search-tours',
     loadChildren: () => import('./search-tours/search-tours.module').then( m => m.SearchToursPageModule)
   },
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'search-book',
     loadChildren: () => import('./search-book/search-book.module').then( m => m.SearchBookPageModule)
+  },
+  {
+    path: 'searchbylocation/:location',
+    loadChildren: () => import('./searchbylocation/searchbylocation.module').then( m => m.SearchbylocationPageModule)
   }
 
 ];

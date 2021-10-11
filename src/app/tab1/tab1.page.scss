@@ -40,6 +40,22 @@ section {
     color: rgb(73, 73, 73);
 }
 
+.heroCardSuggest {
+    padding: 5px;
+    background-color: white;
+    margin: auto;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
+    width: 95%;
+}
+
+.heroCardSuggestText {
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgb(73, 73, 73);
+}
+
 .sectionHeader {
     font-weight: 600;
     color: #ffb449;

@@ -25,7 +25,12 @@
           </ion-card>
         </ion-col>
       </ion-row>
+
     </ion-grid>
+    <ion-card class="heroCardSuggest" routerLink="/placeholder">
+      <ion-card-title class="heroCardSuggestText">Match</ion-card-title>
+    </ion-card>
+
   </section>
 
   <div style="background-color: white;width: 100%;padding-top: 0.5px;padding-bottom: 15px;box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 6px, rgba(0, 0, 0, 0.06) 0px 3px 6px;
@@ -38,7 +43,8 @@
       <div style="background-color: white;border-radius: 5px;">
         <swiper [slidesPerView]="1.2">
           <ng-template swiperSlide *ngFor="let location of mockData.nearbyLocations">
-            <ion-card class="locationCard" [ngStyle]="{'background-image': 'url(' + location.image + ')'}">
+            <ion-card class="locationCard" [ngStyle]="{'background-image': 'url(' + location.image + ')'}"
+              routerLink="/searchbylocation/{{location.name}}">
               <ion-card-title class="locationCardText">{{ location.name }}</ion-card-title>
               <ion-card-subtitle style="text-align: right;" class="locationCardText"><span
                   style="color: #feaa00;font-weight: bold;">{{

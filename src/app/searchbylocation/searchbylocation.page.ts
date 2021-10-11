@@ -1,69 +1,70 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-search-book',
-  templateUrl: './search-book.page.html',
-  styleUrls: ['./search-book.page.scss'],
+  selector: 'app-searchbylocation',
+  templateUrl: './searchbylocation.page.html',
+  styleUrls: ['./searchbylocation.page.scss'],
 })
-export class SearchBookPage implements OnInit {
+export class SearchbylocationPage implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, private route: ActivatedRoute) { }
 
   mockData: any = {
-    "books": [
+    "experiences": [
       {
         "name": "Pastéis de Belém",
-        "image": "assets/map-home.jpg",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
         "description": "lorem impsum dolor et nominum papis supremo et aqua",
         "price": 15,
         "rating": 5,
       },
       {
         "name": "Sunset Tour",
-        "image": "assets/map-home.jpg",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
         "description": "lorem impsum dolor et nominum papis supremo et aqua",
         "price": 36,
         "rating": 5,
       },
       {
         "name": "Tuk Tuk Ride",
-        "image": "assets/map-home.jpg",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
         "description": "lorem impsum dolor et nominum papis supremo et aqua",
         "price": 9,
         "rating": 3.6,
       },
       {
         "name": "Pub Crawl",
-        "image": "assets/map-home.jpg",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
         "description": "lorem impsum dolor et nominum papis supremo et aqua",
         "price": 22,
         "rating": 4.5,
       },
       {
         "name": "Live music",
-        "image": "assets/map-home.jpg",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
         "description": "lorem impsum dolor et nominum papis supremo et aqua",
         "price": 5,
         "rating": 3.5,
       },
       {
         "name": "Food tour",
-        "image": "assets/map-home.jpg",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
         "description": "lorem impsum dolor et nominum papis supremo et aqua",
         "price": 40,
         "rating": 5,
       },
       {
         "name": "Live music",
-        "image": "assets/map-home.jpg",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
         "description": "lorem impsum dolor et nominum papis supremo et aqua",
         "price": 5,
         "rating": 3.5,
       },
       {
         "name": "Food tour",
-        "image": "assets/map-home.jpg",
+        "image": "ruas-mais-bonitas-de-lisboa-1.jpg",
         "description": "lorem impsum dolor et nominum papis supremo et aqua",
         "price": 40,
         "rating": 5,
@@ -71,7 +72,8 @@ export class SearchBookPage implements OnInit {
     ]
   }
 
-  books: any
+  experiences: any
+  locationName: any
 
   // helper function to change simple array to x dimensional array
   arrayToMatrix = (array, columns) => Array(Math.ceil(array.length / columns)).fill('').reduce((acc, cur, index) => {
@@ -80,11 +82,15 @@ export class SearchBookPage implements OnInit {
 
 
   ngOnInit() {
-    this.books = this.arrayToMatrix(this.mockData.books, 2)
+    this.experiences = this.arrayToMatrix(this.mockData.experiences, 2)
+    this.locationName = this.route.snapshot.paramMap.get('location');
+
 
   }
 
   goback() {
     this.navCtrl.pop();
   }
+
+
 }
