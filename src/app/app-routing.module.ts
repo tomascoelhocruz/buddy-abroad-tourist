@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'tour-detail',
     loadChildren: () => import('./tour-detail/tour-detail.module').then( m => m.TourDetailPageModule)
+  },
+  {
+    path: 'buddy-profile',
+    loadChildren: () => import('./buddy-profile/buddy-profile.module').then( m => m.BuddyProfilePageModule)
   }
 
 ];
